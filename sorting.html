@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+<body>
+<head><title>Sorting Interactive</title>
+<link rel="icon" href="https://www.google.com/url?sa=i&url=https%3A%2F%2Ffavicon.io%2F&psig=AOvVaw0D-AoXZaWsE6lpCj0xUFzS&ust=1581847631841000&source=images&cd=vfe&ved=0CAIQjRxqFwoTCOD7kOWn0-cCFQAAAAAdAAAAABAD" type="image/png" sizes="16x16">
+<style>
+.button {
+  background-color: #4CAF50; /* Green */
+  border: black;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.5s;
+  cursor: pointer;
+}
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+body{
+  background:#34495e;
+  color:white;
+  text-align:center;
+  font-family:Helvetica, Arial, sans-serif;
+  font-size:10pt;
+}
+</style>
+</head>
+<h1 style="text-align: center;">Sorting</h1>
+<h2 style="text-align: center;">Enter Your Favourite IceCream Flavours</h2>
+<form>
+<div class="input"><input type="text" id="ic1" value="Cookies N' Cream"><br>
+<input type="text" id="ic2" value="Chocolate"><br>
+<input type="text" id="ic3" value="Mint Chocolate Chip"><br>
+<input type="text" id="ic4" value="Vanilla"><br>
+<input type="text" id="ic5" value="Cookie Dough"><br>
+<input type="text" id="ic6" value="Strawberry"><br>
+<input type="text" id="ic7" value="Chocolate Chip Cookie Dough"><br>
+<input type="text" id="ic8" value="Rocky Road"><br>
+<input type="text" id="ic9" value="Neopolitan"><br>
+<input type="text" id="ic10" value="Coffee"><br>
+</div>
+</form>
+<p>Click the Sort button to get the sorted list</p>
+
+<button class="button button2" onclick="myFunction()">Sort</button><br>
+<script type="text/"></script>
+
+<p id="demo"></p><br>
+
+<script>
+function myFunction() {
+  var a = document.getElementById("ic1").value;
+  var b = document.getElementById("ic2").value;
+  var c = document.getElementById("ic3").value;
+  var d = document.getElementById("ic4").value;
+  var e = document.getElementById("ic5").value;
+  var f = document.getElementById("ic6").value;
+  var g = document.getElementById("ic7").value;
+  var h = document.getElementById("ic8").value;
+  var i = document.getElementById("ic9").value;
+  var j = document.getElementById("ic10").value;
+  var arr =[a,b,c,d,e,f,g,h,i,j];
+  arr.sort();
+  document.getElementById("demo").innerHTML = arr;
+}
+</script>
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.8.2/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCAFgNwyqyuSlmDkhbz4mKGBGfPrr2J15Y",
+    authDomain: "sortingrahman.firebaseapp.com",
+    databaseURL: "https://sortingrahman.firebaseio.com",
+    projectId: "sortingrahman",
+    storageBucket: "sortingrahman.appspot.com",
+    messagingSenderId: "698708692366",
+    appId: "1:698708692366:web:e831d6a1e771dd14a9e8df"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+</body>
+</html>
